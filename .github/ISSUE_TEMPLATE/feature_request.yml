@@ -1,0 +1,31 @@
+name: Feature request
+description: Propose a focused WooCommerce/PHP operations improvement
+title: "[Feature]: "
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or operational need
+      description: Describe the user, order, fulfilment, inventory, currency, or maintenance need.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: Explain the smallest useful implementation and important trade-offs.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: "- [ ] ...\n- [ ] ..."
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Data and compatibility risks
+      description: Note security, concurrency, schema, migration, HPOS, currency, or backward-compatibility considerations.
