@@ -1,0 +1,30 @@
+{
+  "name": "lacvo/lacvo-core",
+  "description": "Focused public WordPress/WooCommerce operations plugin engineering snapshot.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Vo Vinh Lac",
+      "homepage": "https://vovinhlac.com/"
+    }
+  ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+    "squizlabs/php_codesniffer": "^3.10",
+    "wp-coding-standards/wpcs": "^3.1",
+    "phpcompatibility/phpcompatibility-wp": "^2.1"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "scripts": {
+    "syntax": "find . -type f -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -n1 php -l",
+    "lint:wpcs": "phpcs -q"
+  }
+}

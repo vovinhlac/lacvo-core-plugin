@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ruleset name="Lacvo Core">
+    <description>WordPress Coding Standards and PHP compatibility rules for the public Lacvo Core snapshot.</description>
+    <file>lacvo-core.php</file>
+    <file>includes</file>
+    <exclude-pattern>vendor/*</exclude-pattern>
+    <arg name="basepath" value="."/>
+    <arg name="colors"/>
+    <arg value="sp"/>
+    <rule ref="WordPress-Core"/>
+    <rule ref="WordPress-Extra"/>
+    <rule ref="WordPress-Docs"/>
+    <rule ref="PHPCompatibilityWP">
+        <config name="testVersion" value="8.0-"/>
+    </rule>
+</ruleset>
