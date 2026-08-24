@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a reproducible WooCommerce/PHP operations defect
+title: "[Bug]: "
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: WordPress, WooCommerce, PHP and database versions when relevant.
+  - type: textarea
+    id: operational
+    attributes:
+      label: Operational impact
+      description: Note order, fulfilment, inventory, currency, concurrency or data integrity impact.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials, customer/order data and plaintext license inventory.
+          required: true
