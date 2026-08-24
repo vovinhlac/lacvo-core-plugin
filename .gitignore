@@ -1,0 +1,12 @@
+.env
+.env.*
+wp-config.php
+*.log
+*.sql
+*.zip
+node_modules/
+vendor/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
